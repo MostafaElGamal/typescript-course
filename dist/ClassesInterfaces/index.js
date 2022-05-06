@@ -1,4 +1,1 @@
-import ProtectedProprty from "./10_ProtectedProprty.js";
-export default {
-    ProtectedProprty: ProtectedProprty(),
-};
+export { default as _CreatingFirstClass } from "./3_CreatingFirstClass.js";

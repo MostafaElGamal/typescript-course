@@ -1,3 +1,9 @@
 import * as ClassesInterfaces from "./ClassesInterfaces/index.js";
 
-ClassesInterfaces;
+const classesInterfacesObject = ClassesInterfaces as {
+  [key: string]: Function;
+};
+
+for (const objectKey in classesInterfacesObject) {
+  classesInterfacesObject[objectKey]();
+}
