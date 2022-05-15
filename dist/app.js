@@ -1,5 +1,5 @@
 import * as ClassesInterfaces from "./ClassesInterfaces/index.js";
-const classesInterfacesObject = ClassesInterfaces;
-for (const objectKey in classesInterfacesObject) {
+var classesInterfacesObject = ClassesInterfaces;
+for (var objectKey in classesInterfacesObject) {
     classesInterfacesObject[objectKey]();
 }
