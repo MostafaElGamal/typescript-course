@@ -1,16 +1,19 @@
 export default () => {
-  interface Person {
-    name: string;
-    age: number;
-
+  interface Greetable {
+    // You can add "readonly" proptery only.
+    readonly name: string;
     greet(phrase: string): void;
   }
 
-  let user: Person;
+  class Person implements Greetable {
+    constructor(public name: string) {}
+    greet(phrase: string): void {}
+  }
+
+  let user: Greetable;
 
   user = {
     name: "Mustafa",
-    age: 27,
     greet(phrase) {
       console.log(`${phrase} ${this.name}`);
     },

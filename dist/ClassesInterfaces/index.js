@@ -9,4 +9,7 @@
 // export { default as File } from "./12_StaticMethods.js";
 // export { default as File } from "./13_AbstractClasses.js";
 // export { default as File } from "./14_Singletons&PrivateConstructors.js";
-export { default as File } from "./16_FitstInterface.js";
+// export { default as File } from "./16_FitstInterface.js";
+// export { default as File } from "./17_UsingInterface.js";
+// export { default as File } from "./20_ExtendingInterface.js";
+export { default as File } from "./21_InterfaceAsFunctionType.js";
