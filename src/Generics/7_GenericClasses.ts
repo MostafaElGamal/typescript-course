@@ -2,6 +2,7 @@ export default () => {
   // Generic type are used for speciy a daynamic type that will be used in the instanse of the class
   // in here if you will use a union type it will allows for string and number and boolean to be mixed togther
   // but in the generic type will be only one type in the instanse of the class right here in the example
+
   class DataStorage<T extends string | number | boolean> {
     private data: Array<T> = [];
 
