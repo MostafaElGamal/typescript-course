@@ -4,6 +4,7 @@ export default () => {
   const firstUserInputElement = <HTMLInputElement>(
     document.getElementById("user-input")
   );
+
   const secondUserInputElement = document.getElementById(
     "user-input",
   ) as HTMLInputElement;

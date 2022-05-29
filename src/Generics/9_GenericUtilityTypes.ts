@@ -24,5 +24,5 @@ export default () => {
   // The "Readonly" generic makes the value that you assgin to
   // not changeable you know what I mean :D
   const names: Readonly<Array<string>> = ["Max", "Sports"];
-  names.push("Manu");
+  // names.push("Manu");
 }; // file end
