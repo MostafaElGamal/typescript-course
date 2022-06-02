@@ -6,4 +6,5 @@
 // export { default as File } from "./7_Accessor&ParameterDecorators.js";
 // export { default as File } from "./8_WhenDoDecoratorsExecute.js";
 // export { default as File } from "./9_ReturningAndChangingAClassInAClassDecorators.js";
-export { default as File } from "./10_OtherDecoratorReturnTypes.js";
+// export { default as File } from "./10_OtherDecoratorReturnTypes.js";
+// export { default as File } from "./11_ExampleCreatingAutoBindDecrator.js";
