@@ -28,10 +28,9 @@ export default () => {
     const objValidatorConfig = registeredValidators[obj.constructor.name];
 
     if (!objValidatorConfig) return true;
-    console.log(objValidatorConfig);
     let isValid = true;
     for (const prop in objValidatorConfig) {
-      for (const validator in objValidatorConfig[prop]) {
+      for (const validator of objValidatorConfig[prop]) {
         const objValue = obj[prop];
         switch (validator) {
           case "req":
@@ -50,6 +49,7 @@ export default () => {
   class Course {
     @Required
     title: string;
+
     @PositiveNumber
     price: number;
 
@@ -59,7 +59,7 @@ export default () => {
     }
   }
 
-  const courseForm = document.querySelector("form");
+  const courseForm = document.querySelector("form")!;
   courseForm?.addEventListener("submit", (e) => {
     e.preventDefault();
     const titleEl = document.getElementById("title") as HTMLInputElement;
@@ -70,7 +70,7 @@ export default () => {
 
     const createdCourse = new Course(title, price);
 
-    console.log(validate(createdCourse));
+    console.log(validate(createdCourse), "VALIDATE");
     if (!validate(createdCourse)) {
       alert("Invalid Data");
       return;

@@ -8,4 +8,4 @@
 // export { default as File } from "./9_ReturningAndChangingAClassInAClassDecorators.js";
 // export { default as File } from "./10_OtherDecoratorReturnTypes.js";
 // export { default as File } from "./11_ExampleCreatingAutoBindDecrator.js";
-export { default as File } from "./13_ValidationWithDecorators.js";
+// export { default as File } from "./13_ValidationWithDecorators.js";
