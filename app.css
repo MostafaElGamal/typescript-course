@@ -125,3 +125,29 @@ button:active {
   border: 1px solid #ff0062;
   background: #f7f7f7;
 }
+
+#map {
+  width: 90%;
+  height: 20rem;
+  border: 1px solid #ccc;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+form input {
+  width: 100%;
+  max-width: 30rem;
+  border: 1px solid #ccc;
+  padding: 0;
+  margin: 0;
+  height: 43px;
+}
