@@ -6,7 +6,7 @@ module.exports = {
   output: {
     filename: "bundle.js", // "bundle.[contentHash].js" this is for the hashing in every build for the cashing
     path: path.resolve(__dirname, "dist"),
-    publicPath: "dist ",
+    publicPath: "/dist",
   },
   devtool: "inline-source-map",
   module: {
@@ -22,7 +22,10 @@ module.exports = {
     extensions: [".ts", ".js"],
   },
   devServer: {
-    static: "./",
+    static: {
+      directory: path.join(__dirname, "/"),
+    },
     open: true,
+    port: 3000,
   },
 };
